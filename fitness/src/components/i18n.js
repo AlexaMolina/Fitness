@@ -1,0 +1,595 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: {
+        translation: {
+          // HEADER
+          language: "Language",
+          profile: "My Profile",
+          logout: "Logout",
+          signUp: "Sign Up",
+          login: "Login",
+          home: "Home",
+
+          // HOME PAGE
+          welcome: "Welcome to FitnessApp",
+          homeSubtitle: "TRANSFORM YOUR LIFE, ONE STEP AT A TIME",
+          homeSubtitle1:
+            "Discover a new way to stay fit and healthy with our custom workout plans tailored to your needs. ",
+          choosePlan: "Choose this Plan",
+
+          //Registrer
+          registerTitle: "Sign Up",
+          name: "Name",
+          email: "Email Address",
+          password: "Password",
+          age: "Age",
+          weight: "Weight (kg)",
+          height: "Height (cm)",
+          gender: "Gender",
+          female: "Female",
+          male: "Male",
+          other: "Other",
+          submit: "Register",
+          errorRequired: "Please fill in all required fields.",
+          successMessage: "User successfully registered!",
+
+          //login
+          loginTitle: "Login",
+          email1: "Email Address",
+          password1: "Password",
+          signIn: "Sign In",
+          orLoginWith: "Or login with:",
+          orLoginWithFingerprint: "Or login with your fingerprint:",
+          google: "Google",
+          facebook: "Facebook",
+          fingerprint: "Fingerprint",
+          //results
+          fitnessProgress: "📊 My Fitness Progress",
+          dailyActivityLog: "Daily Activity Log",
+          waterIntake: "Water (glasses)",
+          exercise: "Exercise (min)",
+          steps: "Steps",
+          sleepHours: "Sleep (hours)",
+          completedSessions: "Completed Sessions",
+          consistency: "Consistency",
+          caloriesBurned: "Calories Burned",
+          progress: "Progress",
+          viewWeeklyResults: "📅 View Weekly Results",
+
+          //profilcreation
+          profileWelcome: "Welcome {{name}}!",
+          profileInstructions:
+            "Please answer the questions to personalize your experience.",
+          activityLevel: "What is your physical activity level?",
+          sedentary: "Sedentary",
+          moderate: "Moderate",
+          active: "Active",
+          sleepHours: "How many hours do you sleep per day?",
+          lessThan5: "<5 hours",
+          between5And7: "5-7 hours",
+          moreThan7: "7+ hours",
+          exerciseFrequency: "How often do you exercise?",
+          rarely: "Rarely",
+          oneToTwoTimes: "1-2 times per week",
+          moreThanThree: "3+ times per week",
+          dietType: "What type of diet do you prefer?",
+          vegetarian: "Vegetarian",
+          vegan: "Vegan",
+          omnivore: "Omnivore",
+          waterConsumption: "How many liters of water do you drink per day?",
+          lessThan1: "<1 liter",
+          between1And2: "1-2 liters",
+          moreThan2: "2+ liters",
+          stressLevel: "What is your daily stress level?",
+          low: "Low",
+          moderateStress: "Moderate",
+          high: "High",
+          mainGoal: "What is your main goal?",
+          weightLoss: "Weight loss",
+          muscleGain: "Muscle gain",
+          betterHealth: "Better health",
+          exercisePreferences: "What are your favorite exercises?",
+          running: "Running",
+          swimming: "Swimming",
+          yoga: "Yoga",
+          healthRestrictions: "Do you have any health restrictions?",
+          cardiac: "Cardiac",
+          respiratory: "Respiratory",
+          diabetes: "Diabetes",
+          eatingHabits: "What are your eating habits?",
+          regular: "Regular",
+          fastFood: "Fast food",
+          lateEating: "Eating late",
+          familySupport: "Do you have family support?",
+          yes: "Yes",
+          no: "No",
+          sometimes: "Sometimes",
+          saveProfile: "Save Profile",
+
+          //recomendacion planes
+          recommendationTitle:
+            "Based on your answers, we have selected the best plan for you",
+          recommendedPlan: "Recommended Plan: {{plan}}",
+          retry: "Retry",
+          loading: "Loading...",
+          errorFetching: "Error fetching recommendation.",
+          plans: {
+            basic: {
+              title: "Basic",
+              price: "$30",
+              description:
+                "A general plan to get started. Ideal for beginners.",
+              features: [
+                "General training routine",
+                "Basic questions",
+                "Ideal for beginners",
+              ],
+              choose: "Choose this plan",
+            },
+            standard: {
+              title: "Standard",
+              price: "$55",
+              description:
+                "A personalized AI plan. Exercises tailored to your needs.",
+              features: [
+                "AI personalized plan",
+                "Customized tracking",
+                "Tailored exercises",
+              ],
+              choose: "Choose this plan",
+            },
+            premium: {
+              title: "Premium",
+              price: "$70",
+              description:
+                "All-inclusive, 100% personalized. AI-adapted nutrition plan.",
+              features: [
+                "Advanced exercise plan",
+                "Personalized diet",
+                "AI to optimize your results",
+              ],
+              choose: "Choose this plan",
+            },
+          },
+
+          // PLANS
+          basic: "Basic",
+          standard: "Standard",
+          premium: "Premium",
+          price: "Price",
+
+          //payer basic
+          paymentTitle: "Payment for the {{plan}} Plan",
+          price: "Price",
+          description: "Description",
+          features: "Features",
+          paypalProcessing: "Processing payment with PayPal...",
+          paymentSuccess: "Payment Completed Successfully!",
+          orderId: "Order ID",
+          total: "Total",
+          date: "Date",
+          status: "Status",
+          proceed: "Let's Start",
+          paymentError: "Error processing the payment.",
+          planNotFound: "Plan not found",
+
+          // weekly
+          weeklySummary: "📊 Weekly Summary",
+          weeklyRecommendations: "Weekly Recommendations",
+          day: "Day",
+          time: "Time",
+          steps: "Steps",
+          calories: "Calories",
+          sleepHours: "Sleep (hours)",
+          noRecordsAvailable: "No records available",
+          loadingRecommendations: "Loading recommendations...",
+          errorFetchingRecommendations: "Error fetching AI recommendations.",
+
+          // RESULTS PAGE
+          weeklyResults: "Weekly Results",
+          steps: "Steps",
+          calories: "Calories",
+          sleep: "Sleep (hours)",
+          recommendations: "Weekly Recommendations",
+        },
+      },
+
+      fr: {
+        translation: {
+          // HEADER
+          language: "Langue",
+          profile: "Mon Profil",
+          logout: "Déconnexion",
+          signUp: "Inscription",
+          login: "Connexion",
+          home: "Accueil",
+
+          //Registrer
+          registerTitle: "Inscription",
+          name: "Nom",
+          email: "Adresse e-mail",
+          password: "Mot de passe",
+          age: "Âge",
+          weight: "Poids (kg)",
+          height: "Taille (cm)",
+          gender: "Sexe",
+          female: "Femme",
+          male: "Homme",
+          other: "Autre",
+          submit: "S'inscrire",
+          errorRequired: "Veuillez remplir tous les champs obligatoires.",
+          successMessage: "Utilisateur inscrit avec succès!",
+
+          //Login
+          loginTitle: "Connexion",
+          email1: "Adresse e-mail",
+          password1: "Mot de passe",
+          signIn: "Connexion",
+          orLoginWith: "Ou connectez-vous avec :",
+          orLoginWithFingerprint: "Ou connectez-vous avec votre empreinte :",
+          google: "Google",
+          facebook: "Facebook",
+          fingerprint: "Empreinte Digitale",
+
+          //profile creation
+          profileWelcome: "Bienvenue {{name}}!",
+          profileInstructions:
+            "Merci de répondre aux questions pour personnaliser votre expérience.",
+          activityLevel: "Quel est votre niveau d'activité physique?",
+          sedentary: "Sédentaire",
+          moderate: "Modéré",
+          active: "Actif",
+          sleepHours: "Combien d'heures dormez-vous par jour?",
+          lessThan5: "<5 heures",
+          between5And7: "5-7 heures",
+          moreThan7: "7+ heures",
+          exerciseFrequency:
+            "Quelle est la fréquence de votre exercice physique?",
+          rarely: "Rarement",
+          oneToTwoTimes: "1-2 fois par semaine",
+          moreThanThree: "3+ fois par semaine",
+          dietType: "Quel type d'alimentation préférez-vous?",
+          vegetarian: "Végétarien",
+          vegan: "Végétalien",
+          omnivore: "Omnivore",
+          waterConsumption: "Combien de litres d'eau buvez-vous par jour?",
+          lessThan1: "<1 litre",
+          between1And2: "1-2 litres",
+          moreThan2: "2+ litres",
+          stressLevel: "Quel est votre niveau de stress quotidien?",
+          low: "Faible",
+          moderateStress: "Modéré",
+          high: "Élevé",
+          mainGoal: "Quel est votre objectif principal?",
+          weightLoss: "Perte de poids",
+          muscleGain: "Gain de masse",
+          betterHealth: "Meilleure santé",
+          exercisePreferences: "Quels sont vos exercices préférés?",
+          running: "Course",
+          swimming: "Natation",
+          yoga: "Yoga",
+          healthRestrictions: "Avez-vous des restrictions de santé?",
+          cardiac: "Cardiaque",
+          respiratory: "Respiratoire",
+          diabetes: "Diabète",
+          eatingHabits: "Quelles sont vos habitudes alimentaires?",
+          regular: "Régulier",
+          fastFood: "Alimentation rapide",
+          lateEating: "Manger tard",
+          familySupport: "Avez-vous le soutien de votre famille?",
+          yes: "Oui",
+          no: "Non",
+          sometimes: "Parfois",
+          saveProfile: "Enregistrer le Profil",
+          //recomendations planes
+          recommendationTitle:
+            "Basé sur vos réponses, nous avons sélectionné le meilleur plan pour vous",
+          recommendedPlan: "Plan recommandé: {{plan}}",
+          retry: "Réessayer",
+          loading: "Chargement...",
+          errorFetching: "Erreur lors de l'obtention de la recommandation.",
+          plans: {
+            basic: {
+              title: "Basique",
+              price: "$30",
+              description:
+                "Un plan général pour commencer. Idéal pour les débutants.",
+              features: [
+                "Routine d'entraînement générale",
+                "Questions de base",
+                "Idéal pour les débutants",
+              ],
+              choose: "Choisir ce plan",
+            },
+            standard: {
+              title: "Standard",
+              price: "$55",
+              description:
+                "Un plan personnalisé avec IA. Exercices adaptés à vos besoins.",
+              features: [
+                "Plan personnalisé avec IA",
+                "Suivi adapté",
+                "Exercices sur mesure",
+              ],
+              choose: "Choisir ce plan",
+            },
+            premium: {
+              title: "Premium",
+              price: "$70",
+              description:
+                "Tout inclus, 100% personnalisé. Régime alimentaire adapté avec IA.",
+              features: [
+                "Plan d'exercices avancé",
+                "Régime alimentaire personnalisé",
+                "IA pour optimiser vos résultats",
+              ],
+              choose: "Choisir ce plan",
+            },
+          },
+          // payer basic
+          paymentTitle: "Paiement pour le plan {{plan}}",
+          price: "Prix",
+          description: "Description",
+          features: "Caractéristiques",
+          paypalProcessing: "Traitement du paiement avec PayPal...",
+          paymentSuccess: "Paiement effectué avec succès!",
+          orderId: "ID de commande",
+          total: "Total",
+          date: "Date",
+          status: "Statut",
+          proceed: "Commençons",
+          paymentError: "Erreur lors du traitement du paiement.",
+          planNotFound: "Plan non trouvé",
+          //results
+          fitnessProgress: "📊 Mon Progrès Fitness",
+          dailyActivityLog: "Journal d'Activité Quotidienne",
+          waterIntake: "Eau (verres)",
+          exercise: "Exercice (min)",
+          steps: "Pas",
+          sleepHours: "Sommeil (heures)",
+          completedSessions: "Sessions Terminées",
+          consistency: "Consistance",
+          caloriesBurned: "Calories Brûlées",
+          progress: "Progrès",
+          viewWeeklyResults: "📅 Voir Résultats Hebdomadaires",
+          // HOME PAGE
+          welcome: "Bienvenue à FitnessApp",
+          homeSubtitle: "TRANSFORMEZ VOTRE VIE, UNE ÉTAPE À LA FOIS",
+          homeSubtitle1:
+            "Découvrez une nouvelle façon de rester en forme et en santé avec nos plans d’entraînement personnalisés adaptés à vos besoins. ",
+          choosePlan: "Choisir ce Plan",
+
+          //weekly
+          weeklySummary: "📊 Résumé Hebdomadaire",
+          weeklyRecommendations: "Recommandations Hebdomadaires",
+          day: "Jour",
+          time: "Heure",
+          steps: "Pas",
+          calories: "Calories",
+          sleepHours: "Sommeil (heures)",
+          noRecordsAvailable: "Aucun enregistrement disponible",
+          loadingRecommendations: "Chargement des recommandations...",
+          errorFetchingRecommendations:
+            "Erreur lors de l'obtention des recommandations de l'IA.",
+
+          // PLANS
+          basic: "Basique",
+          standard: "Standard",
+          premium: "Premium",
+          price: "Prix",
+
+          // RESULTS PAGE
+          weeklyResults: "Résultats Hebdomadaires",
+          steps: "Pas",
+          calories: "Calories",
+          sleep: "Sommeil (heures)",
+          recommendations: "Recommandations Hebdomadaires",
+        },
+      },
+
+      es: {
+        translation: {
+          // HEADER
+          language: "Idioma",
+          profile: "Mi Perfil",
+          logout: "Cerrar Sesión",
+          signUp: "Registrarse",
+          login: "Iniciar Sesión",
+          home: "Inicio",
+
+          //Registrer
+
+          registerTitle: "Registro",
+          name: "Nombre",
+          email: "Correo Electrónico",
+          password: "Contraseña",
+          age: "Edad",
+          weight: "Peso (kg)",
+          height: "Altura (cm)",
+          gender: "Género",
+          female: "Femenino",
+          male: "Masculino",
+          other: "Otro",
+          submit: "Registrarse",
+          errorRequired: "Por favor, completa todos los campos obligatorios.",
+          successMessage: "Usuario registrado exitosamente.",
+
+          //Login
+          loginTitle: "Iniciar Sesión",
+          email1: "Correo Electrónico",
+          password1: "Contraseña",
+          signIn: "Iniciar Sesión",
+          orLoginWith: "O inicia sesión con:",
+          orLoginWithFingerprint: "O inicia sesión con tu huella digital:",
+          google: "Google",
+          facebook: "Facebook",
+          fingerprint: "Huella Digital",
+
+          //payer basic
+          paymentTitle: "Pago del plan {{plan}}",
+          price: "Precio",
+          description: "Descripción",
+          features: "Características",
+          paypalProcessing: "Procesando pago con PayPal...",
+          paymentSuccess: "¡Pago completado con éxito!",
+          orderId: "ID de orden",
+          total: "Total",
+          date: "Fecha",
+          status: "Estado",
+          proceed: "Comenzar",
+          paymentError: "Error al procesar el pago.",
+          planNotFound: "Plan no encontrado",
+
+          //profil creation
+          profileWelcome: "¡Bienvenido {{name}}!",
+          profileInstructions:
+            "Responde las preguntas para personalizar tu experiencia.",
+          activityLevel: "¿Cuál es tu nivel de actividad física?",
+          sedentary: "Sedentario",
+          moderate: "Moderado",
+          active: "Activo",
+          sleepHours: "¿Cuántas horas duermes al día?",
+          lessThan5: "<5 horas",
+          between5And7: "5-7 horas",
+          moreThan7: "7+ horas",
+          exerciseFrequency: "¿Con qué frecuencia haces ejercicio?",
+          rarely: "Rara vez",
+          oneToTwoTimes: "1-2 veces por semana",
+          moreThanThree: "3+ veces por semana",
+          dietType: "¿Qué tipo de alimentación prefieres?",
+          vegetarian: "Vegetariana",
+          vegan: "Vegana",
+          omnivore: "Omnívora",
+          waterConsumption: "¿Cuántos litros de agua bebes al día?",
+          lessThan1: "<1 litro",
+          between1And2: "1-2 litros",
+          moreThan2: "2+ litros",
+          stressLevel: "¿Cuál es tu nivel de estrés diario?",
+          low: "Bajo",
+          moderateStress: "Moderado",
+          high: "Alto",
+          mainGoal: "¿Cuál es tu objetivo principal?",
+          weightLoss: "Pérdida de peso",
+          muscleGain: "Ganar masa muscular",
+          betterHealth: "Mejorar la salud",
+          exercisePreferences: "¿Cuáles son tus ejercicios favoritos?",
+          running: "Correr",
+          swimming: "Natación",
+          yoga: "Yoga",
+          healthRestrictions: "¿Tienes alguna restricción de salud?",
+          cardiac: "Cardíaca",
+          respiratory: "Respiratoria",
+          diabetes: "Diabetes",
+          eatingHabits: "¿Cuáles son tus hábitos alimenticios?",
+          regular: "Regular",
+          fastFood: "Comida rápida",
+          lateEating: "Comer tarde",
+          familySupport: "¿Tienes apoyo familiar?",
+          yes: "Sí",
+          no: "No",
+          sometimes: "A veces",
+          saveProfile: "Guardar Perfil",
+          //weekly
+          weeklySummary: "📊 Resumen Semanal",
+          weeklyRecommendations: "Recomendaciones Semanales",
+          day: "Día",
+          time: "Hora",
+          steps: "Pasos",
+          calories: "Calorías",
+          sleepHours: "Sueño (horas)",
+          noRecordsAvailable: "No hay registros disponibles",
+          loadingRecommendations: "Cargando recomendaciones...",
+          errorFetchingRecommendations:
+            "Error al obtener recomendaciones de la IA.",
+          //results
+          fitnessProgress: "📊 Mi Progreso Fitness",
+          dailyActivityLog: "Registro Diario de Actividad",
+          waterIntake: "Agua (vasos)",
+          exercise: "Ejercicio (min)",
+          steps: "Pasos",
+          sleepHours: "Horas de Sueño",
+          completedSessions: "Sesiones Completadas",
+          consistency: "Consistencia",
+          caloriesBurned: "Calorías Quemadas",
+          progress: "Progreso",
+          viewWeeklyResults: "📅 Ver Resultados Semanales",
+          //planes recomendations
+          recommendationTitle:
+            "Basado en tus respuestas, hemos seleccionado el mejor plan para ti",
+          recommendedPlan: "Plan recomendado: {{plan}}",
+          retry: "Reintentar",
+          loading: "Cargando...",
+          errorFetching: "Error al obtener la recomendación.",
+          plans: {
+            basic: {
+              title: "Básico",
+              price: "$30",
+              description:
+                "Un plan general para comenzar. Ideal para principiantes.",
+              features: [
+                "Rutina de entrenamiento general",
+                "Preguntas básicas",
+                "Ideal para principiantes",
+              ],
+              choose: "Elegir este plan",
+            },
+            standard: {
+              title: "Estándar",
+              price: "$55",
+              description:
+                "Un plan personalizado con IA. Ejercicios adaptados a tus necesidades.",
+              features: [
+                "Plan personalizado con IA",
+                "Seguimiento personalizado",
+                "Ejercicios a medida",
+              ],
+              choose: "Elegir este plan",
+            },
+            premium: {
+              title: "Premium",
+              price: "$70",
+              description:
+                "Todo incluido, 100% personalizado. Plan de nutrición adaptado con IA.",
+              features: [
+                "Plan de ejercicios avanzado",
+                "Dieta personalizada",
+                "IA para optimizar tus resultados",
+              ],
+              choose: "Elegir este plan",
+            },
+          },
+
+          // HOME PAGE
+          welcome: "Bienvenido a FitnessApp",
+          homeSubtitle: "TRANSFORMA TU VIDA, UN PASO A LA VEZ",
+          homeSubtitle1:
+            "Descubre una nueva forma de mantenerte en forma y saludable con nuestros planes de entrenamiento personalizados adaptados a tus necesidades. ",
+          choosePlan: "Elegir este Plan",
+
+          // PLANS
+          basic: "Básico",
+          standard: "Estándar",
+          premium: "Premium",
+          price: "Precio",
+
+          // RESULTS PAGE
+          weeklyResults: "Resultados Semanales",
+          steps: "Pasos",
+          calories: "Calorías",
+          sleep: "Sueño (horas)",
+          recommendations: "Recomendaciones Semanales",
+        },
+      },
+    },
+    fallbackLng: "es",
+    interpolation: { escapeValue: false },
+  });
+
+export default i18n;
