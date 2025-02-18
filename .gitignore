@@ -1,2 +1,3 @@
 # Ignorar node_modules
 node_modules/fitness/src/.env
+fitness-backend/credentials.json
